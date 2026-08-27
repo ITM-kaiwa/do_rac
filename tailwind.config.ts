@@ -32,6 +32,13 @@ const config: Config = {
           500: "#6FA34E",
           600: "#54803A",
         },
+        // Falling-item game backdrop: pale lemon (matches the sister app's
+        // falling-item game card background).
+        lemon: {
+          100: "#FDFAE2",
+          200: "#FAF3B8",
+          300: "#F4E888",
+        },
       },
       fontFamily: {
         vietnamese: ['"Times New Roman"', "Times", "serif"],

@@ -1,5 +1,5 @@
-/** The four learning modes exposed in the header tab strip. */
-export type AppMode = "guide" | "sort" | "truefalse" | "quiz";
+/** The five learning modes exposed in the header tab strip. */
+export type AppMode = "guide" | "sort" | "falling" | "truefalse" | "quiz";
 
 /**
  * The nine trash categories taught in the source lesson
@@ -21,8 +21,8 @@ export type GomiCategoryId =
 export interface GomiCategory {
   id: GomiCategoryId;
   emoji: string;
+  /** Hiragana/katakana only -- no kanji, so this reads cleanly at small sizes without furigana. */
   nameJa: string;
-  nameReading: string;
   nameVi: string;
   descriptionVi: string;
   /** Tailwind color stem, e.g. "red" -> bg-red-100, border-red-300, text-red-700. */
@@ -32,9 +32,8 @@ export interface GomiCategory {
 export interface GomiItem {
   id: string;
   emoji: string;
+  /** Hiragana/katakana only -- no kanji, so this reads cleanly at small sizes without furigana. */
   nameJa: string;
-  /** Hiragana reading of nameJa, for furigana. Equal to nameJa when the term is already pure kana/katakana. */
-  reading: string;
   nameVi: string;
   categoryId: GomiCategoryId;
   /** Short explanation shown after answering (why this category / caveats). */

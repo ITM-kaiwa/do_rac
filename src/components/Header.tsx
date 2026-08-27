@@ -1,7 +1,6 @@
 "use client";
 
 import type { AppMode } from "@/lib/types";
-import Ruby from "./Ruby";
 
 interface HeaderProps {
   mode: AppMode;
@@ -11,6 +10,7 @@ interface HeaderProps {
 const TABS: Array<{ mode: AppMode; label: string }> = [
   { mode: "guide", label: "Phân loại rác" },
   { mode: "sort", label: "Trò chơi phân loại" },
+  { mode: "falling", label: "Rác rơi" },
   { mode: "truefalse", label: "Đúng / Sai" },
   { mode: "quiz", label: "Trắc nghiệm" },
 ];
@@ -22,9 +22,7 @@ export default function Header({ mode, onModeChange }: HeaderProps) {
         <span className="text-2xl">♻️</span>
         <div className="flex flex-col leading-tight">
           <span className="text-base font-bold tracking-wide text-sand-800">Phân loại rác</span>
-          <span className="text-xs leading-loose text-sand-500">
-            <Ruby text="ゴミの分別" reading="ごみのぶんべつ" />
-          </span>
+          <span className="text-xs text-sand-500">ごみのぶんべつ</span>
         </div>
       </div>
 

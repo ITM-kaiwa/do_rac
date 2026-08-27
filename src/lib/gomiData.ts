@@ -19,8 +19,7 @@ export const GOMI_CATEGORIES: GomiCategory[] = [
   {
     id: "moeru",
     emoji: "🔥",
-    nameJa: "燃えるゴミ",
-    nameReading: "もえるゴミ",
+    nameJa: "もえるゴミ",
     nameVi: "Rác cháy được (rác dễ cháy)",
     descriptionVi:
       "Rác thức ăn thừa, quần áo và giày dép cũ, hoa tươi đã héo, thú nhồi bông, tã giấy đã dùng, dây/thừng. Đốt được nên thu gom bằng túi đốt được theo quy định của địa phương.",
@@ -29,18 +28,16 @@ export const GOMI_CATEGORIES: GomiCategory[] = [
   {
     id: "moenai",
     emoji: "🪨",
-    nameJa: "燃えないゴミ",
-    nameReading: "もえないゴミ",
+    nameJa: "もえないゴミ",
     nameVi: "Rác không cháy được",
     descriptionVi:
-      "Đồ sứ/gốm/thủy tinh bị vỡ, bóng đèn, đồ dùng nhỏ bằng kim loại/nhựa tổng hợp. Dao, kéo phải gói riêng bằng giấy báo và ghi rõ \"nguy hiểm\" (危険) bên ngoài trước khi vứt.",
+      "Đồ sứ/gốm/thủy tinh bị vỡ, bóng đèn, đồ dùng nhỏ bằng kim loại/nhựa tổng hợp. Dao, kéo phải gói riêng bằng giấy báo và ghi rõ \"nguy hiểm\" (kiken) bên ngoài trước khi vứt.",
     color: "slate",
   },
   {
     id: "shigen",
     emoji: "♻️",
-    nameJa: "資源ゴミ",
-    nameReading: "しげんゴミ",
+    nameJa: "しげんゴミ",
     nameVi: "Rác tài nguyên / tái chế",
     descriptionVi:
       "Lon, chai thủy tinh, báo cũ, tạp chí, thùng các tông, hộp sữa, đồ kim loại (nồi, chảo). Phải rửa sạch trước khi vứt -- nếu vết bẩn không rửa được thì bỏ vào rác cháy được thay vì rác tài nguyên.",
@@ -50,7 +47,6 @@ export const GOMI_CATEGORIES: GomiCategory[] = [
     id: "plastic",
     emoji: "🧴",
     nameJa: "プラスチックゴミ",
-    nameReading: "プラスチックゴミ",
     nameVi: "Rác nhựa",
     descriptionVi:
       "Bao bì nhựa có in dấu \"プラ\". Đồ vật mỏng hơn thẻ ngân hàng (dưới khoảng 0.76mm) thường được xếp vào rác cháy được; dày hơn thì xếp vào rác không cháy được. Rửa sạch trước khi vứt.",
@@ -59,8 +55,7 @@ export const GOMI_CATEGORIES: GomiCategory[] = [
   {
     id: "pet",
     emoji: "🍾",
-    nameJa: "PETボトル",
-    nameReading: "ペットボトル",
+    nameJa: "ペットボトル",
     nameVi: "Chai nhựa PET",
     descriptionVi:
       "Chai nước, chai trà, chai nước tương... Tháo nắp và nhãn (thường xếp vào rác nhựa riêng), rửa sạch bên trong rồi mới vứt vào ngày thu gom chai PET.",
@@ -69,8 +64,7 @@ export const GOMI_CATEGORIES: GomiCategory[] = [
   {
     id: "sodai",
     emoji: "🛋️",
-    nameJa: "粗大ゴミ",
-    nameReading: "そだいゴミ",
+    nameJa: "そだいゴミ",
     nameVi: "Rác cồng kềnh (đồ lớn)",
     descriptionVi:
       "Bàn ghế gỗ, giường, nệm, tủ quần áo, thảm, chiếu tatami -- những thứ không vừa túi rác 20 lít. Phải mua phiếu thu gom rác cồng kềnh (bán ở cửa hàng tiện lợi/siêu thị) và đặt lịch trước.",
@@ -79,8 +73,7 @@ export const GOMI_CATEGORIES: GomiCategory[] = [
   {
     id: "kaden",
     emoji: "📺",
-    nameJa: "大型家電",
-    nameReading: "おおがたかでん",
+    nameJa: "おおがたかでん",
     nameVi: "Đồ điện gia dụng cỡ lớn",
     descriptionVi:
       "Tủ lạnh, máy giặt, điều hòa, tivi -- thuộc \"luật tái chế đồ điện gia dụng\". KHÔNG được vứt như rác cồng kềnh thông thường; phải liên hệ cửa hàng bán hoặc đơn vị thu gom chỉ định của địa phương (có phí).",
@@ -89,8 +82,7 @@ export const GOMI_CATEGORIES: GomiCategory[] = [
   {
     id: "kiken",
     emoji: "⚠️",
-    nameJa: "危険・有害ゴミ",
-    nameReading: "きけん・ゆうがいゴミ",
+    nameJa: "きけん・ゆうがいゴミ",
     nameVi: "Rác nguy hiểm / độc hại",
     descriptionVi:
       "Pin khô, bình xịt, đèn huỳnh quang, nhiệt kế, bật lửa. Bình xịt phải xì hết ga (đâm thủng, làm xẹp) trước khi vứt vì có thể phát nổ. Thu gom riêng theo lịch của địa phương.",
@@ -99,8 +91,7 @@ export const GOMI_CATEGORIES: GomiCategory[] = [
   {
     id: "special",
     emoji: "💻",
-    nameJa: "特別回収",
-    nameReading: "とくべつかいしゅう",
+    nameJa: "とくべつかいしゅう",
     nameVi: "Thu gom đặc biệt (máy tính, điện thoại)",
     descriptionVi:
       "Máy tính, laptop, điện thoại cũ chứa nhiều thông tin cá nhân nên KHÔNG được vứt như rác thường. Hãy liên hệ nhà sản xuất để họ thu lại, hoặc mang đến bưu điện/tòa thị chính.",
@@ -114,79 +105,79 @@ export function getGomiCategory(id: string): GomiCategory | undefined {
 
 export const GOMI_ITEMS: GomiItem[] = [
   // もえるゴミ
-  { id: "food_waste", emoji: "🍚", nameJa: "生ゴミ", reading: "なまゴミ", nameVi: "Rác thức ăn thừa", categoryId: "moeru", note: "Nên để ráo nước trước khi cho vào túi." },
-  { id: "clothes", emoji: "👕", nameJa: "古着", reading: "ふるぎ", nameVi: "Quần áo cũ", categoryId: "moeru", note: "Quần áo và giày dép được xếp vào rác cháy được." },
-  { id: "shoes", emoji: "👟", nameJa: "靴（運動靴）", reading: "くつ（うんどうぐつ）", nameVi: "Giày thể thao", categoryId: "moeru", note: "Cùng nhóm với quần áo cũ -- rác cháy được." },
-  { id: "flowers", emoji: "💐", nameJa: "生花（枯れたもの）", reading: "せいか（かれたもの）", nameVi: "Hoa tươi đã héo", categoryId: "moeru", note: "Thuộc nhóm \"đồ vật khác\" trong rác cháy được." },
-  { id: "stuffed_toy", emoji: "🧸", nameJa: "ぬいぐるみ", reading: "ぬいぐるみ", nameVi: "Thú nhồi bông", categoryId: "moeru", note: "Đồ vải bông nhồi -- rác cháy được." },
-  { id: "diaper", emoji: "🩲", nameJa: "使用済み紙おむつ", reading: "しようずみかみおむつ", nameVi: "Tã giấy đã dùng", categoryId: "moeru", note: "Tã dùng một lần được nêu rõ trong bài học là rác cháy được." },
-  { id: "rope", emoji: "🪢", nameJa: "紐・ロープ", reading: "ひも・ロープ", nameVi: "Dây, thừng", categoryId: "moeru", note: "Dùng để buộc các loại rác khác, bản thân nó cũng là rác cháy được." },
-  { id: "branches", emoji: "🌿", nameJa: "木の枝（束ねたもの）", reading: "きのえだ（たばねたもの）", nameVi: "Cành cây (đã bó lại)", categoryId: "moeru", note: "Cắt thành đoạn khoảng 50cm và buộc bằng dây trước khi vứt." },
-  { id: "socks", emoji: "🧦", nameJa: "靴下（布製）", reading: "くつした（ぬのせい）", nameVi: "Tất/vớ vải", categoryId: "moeru", note: "Đồ vải -- cùng nhóm với quần áo cũ." },
+  { id: "food_waste", emoji: "🍚", nameJa: "なまゴミ", nameVi: "Rác thức ăn thừa", categoryId: "moeru", note: "Nên để ráo nước trước khi cho vào túi." },
+  { id: "clothes", emoji: "👕", nameJa: "ふるぎ", nameVi: "Quần áo cũ", categoryId: "moeru", note: "Quần áo và giày dép được xếp vào rác cháy được." },
+  { id: "shoes", emoji: "👟", nameJa: "くつ（うんどうぐつ）", nameVi: "Giày thể thao", categoryId: "moeru", note: "Cùng nhóm với quần áo cũ -- rác cháy được." },
+  { id: "flowers", emoji: "💐", nameJa: "せいか（かれたもの）", nameVi: "Hoa tươi đã héo", categoryId: "moeru", note: "Thuộc nhóm \"đồ vật khác\" trong rác cháy được." },
+  { id: "stuffed_toy", emoji: "🧸", nameJa: "ぬいぐるみ", nameVi: "Thú nhồi bông", categoryId: "moeru", note: "Đồ vải bông nhồi -- rác cháy được." },
+  { id: "diaper", emoji: "🩲", nameJa: "しようずみかみおむつ", nameVi: "Tã giấy đã dùng", categoryId: "moeru", note: "Tã dùng một lần được nêu rõ trong bài học là rác cháy được." },
+  { id: "rope", emoji: "🪢", nameJa: "ひも・ロープ", nameVi: "Dây, thừng", categoryId: "moeru", note: "Dùng để buộc các loại rác khác, bản thân nó cũng là rác cháy được." },
+  { id: "branches", emoji: "🌿", nameJa: "きのえだ（たばねたもの）", nameVi: "Cành cây (đã bó lại)", categoryId: "moeru", note: "Cắt thành đoạn khoảng 50cm và buộc bằng dây trước khi vứt." },
+  { id: "socks", emoji: "🧦", nameJa: "くつした（ぬのせい）", nameVi: "Tất/vớ vải", categoryId: "moeru", note: "Đồ vải -- cùng nhóm với quần áo cũ." },
 
   // もえないゴミ
-  { id: "broken_bowl", emoji: "🍶", nameJa: "割れた茶碗", reading: "われたちゃわん", nameVi: "Bát sứ bị vỡ", categoryId: "moenai", note: "Đồ sứ/gốm vỡ thuộc rác không cháy được." },
-  { id: "clock", emoji: "🕐", nameJa: "掛け時計", reading: "かけどけい", nameVi: "Đồng hồ treo tường", categoryId: "moenai", note: "Đồ vật nhỏ bằng nhựa/kim loại tổng hợp." },
-  { id: "knife", emoji: "🔪", nameJa: "包丁・ハサミ", reading: "ほうちょう・ハサミ", nameVi: "Dao, kéo", categoryId: "moenai", note: "Phải gói bằng giấy báo, ghi rõ \"nguy hiểm\" (危険) bên ngoài, KHÔNG bỏ chung túi với rác không cháy khác." },
-  { id: "lightbulb", emoji: "💡", nameJa: "電球", reading: "でんきゅう", nameVi: "Bóng đèn (loại thường)", categoryId: "moenai", note: "Thủy tinh + kim loại -- rác không cháy được." },
-  { id: "plant_pot", emoji: "🪴", nameJa: "植木鉢（陶器）", reading: "うえきばち（とうき）", nameVi: "Chậu cây bằng gốm sứ", categoryId: "moenai", note: "Đồ gốm sứ -- rác không cháy được." },
-  { id: "fan", emoji: "🌀", nameJa: "扇風機", reading: "せんぷうき", nameVi: "Quạt điện (loại nhỏ)", categoryId: "moenai", note: "Đồ điện nhỏ không thuộc luật tái chế gia dụng lớn." },
-  { id: "vacuum", emoji: "🧹", nameJa: "掃除機", reading: "そうじき", nameVi: "Máy hút bụi (loại nhỏ)", categoryId: "moenai", note: "Đồ điện nhỏ -- khác với tủ lạnh/máy giặt/điều hòa/tivi (大型家電)." },
-  { id: "bike_tire", emoji: "🚲", nameJa: "自転車のタイヤ", reading: "じてんしゃのタイヤ", nameVi: "Lốp xe đạp", categoryId: "moenai", note: "Cao su + kim loại -- rác không cháy được." },
-  { id: "hanger", emoji: "👔", nameJa: "ハンガー（針金）", reading: "ハンガー（はりがね）", nameVi: "Móc áo bằng dây kẽm", categoryId: "moenai", note: "Kim loại nhỏ -- rác không cháy được." },
-  { id: "kettle_small", emoji: "🫖", nameJa: "電気ポット", reading: "でんきポット", nameVi: "Bình đun nước điện (loại nhỏ)", categoryId: "moenai", note: "Đồ điện nhỏ -- rác không cháy được." },
+  { id: "broken_bowl", emoji: "🍶", nameJa: "われたちゃわん", nameVi: "Bát sứ bị vỡ", categoryId: "moenai", note: "Đồ sứ/gốm vỡ thuộc rác không cháy được." },
+  { id: "clock", emoji: "🕐", nameJa: "かけどけい", nameVi: "Đồng hồ treo tường", categoryId: "moenai", note: "Đồ vật nhỏ bằng nhựa/kim loại tổng hợp." },
+  { id: "knife", emoji: "🔪", nameJa: "ほうちょう・ハサミ", nameVi: "Dao, kéo", categoryId: "moenai", note: "Phải gói bằng giấy báo, ghi rõ \"nguy hiểm\" (kiken) bên ngoài, KHÔNG bỏ chung túi với rác không cháy khác." },
+  { id: "lightbulb", emoji: "💡", nameJa: "でんきゅう", nameVi: "Bóng đèn (loại thường)", categoryId: "moenai", note: "Thủy tinh + kim loại -- rác không cháy được." },
+  { id: "plant_pot", emoji: "🪴", nameJa: "うえきばち（とうき）", nameVi: "Chậu cây bằng gốm sứ", categoryId: "moenai", note: "Đồ gốm sứ -- rác không cháy được." },
+  { id: "fan", emoji: "🌀", nameJa: "せんぷうき", nameVi: "Quạt điện (loại nhỏ)", categoryId: "moenai", note: "Đồ điện nhỏ không thuộc luật tái chế gia dụng lớn." },
+  { id: "vacuum", emoji: "🧹", nameJa: "そうじき", nameVi: "Máy hút bụi (loại nhỏ)", categoryId: "moenai", note: "Đồ điện nhỏ -- khác với tủ lạnh/máy giặt/điều hòa/tivi (loại lớn)." },
+  { id: "bike_tire", emoji: "🚲", nameJa: "じてんしゃのタイヤ", nameVi: "Lốp xe đạp", categoryId: "moenai", note: "Cao su + kim loại -- rác không cháy được." },
+  { id: "hanger", emoji: "👔", nameJa: "ハンガー（はりがね）", nameVi: "Móc áo bằng dây kẽm", categoryId: "moenai", note: "Kim loại nhỏ -- rác không cháy được." },
+  { id: "kettle_small", emoji: "🫖", nameJa: "でんきポット", nameVi: "Bình đun nước điện (loại nhỏ)", categoryId: "moenai", note: "Đồ điện nhỏ -- rác không cháy được." },
 
-  // 資源ゴミ
-  { id: "can", emoji: "🥫", nameJa: "空き缶", reading: "あきかん", nameVi: "Lon rỗng", categoryId: "shigen", note: "Rửa sạch trước khi vứt. Có thể tái chế thành lon mới, vành xe, vật liệu xây dựng." },
-  { id: "glass_bottle", emoji: "🍾", nameJa: "空き瓶", reading: "あきびん", nameVi: "Chai thủy tinh (còn nguyên)", categoryId: "shigen", note: "Chai vỡ thì xếp vào rác không cháy được, chai còn nguyên thì tái chế." },
-  { id: "newspaper", emoji: "📰", nameJa: "新聞紙", reading: "しんぶんし", nameVi: "Báo cũ", categoryId: "shigen", note: "Giấy sạch, khô ráo có thể tái chế thành báo/tạp chí mới." },
-  { id: "magazine", emoji: "📖", nameJa: "雑誌", reading: "ざっし", nameVi: "Tạp chí", categoryId: "shigen", note: "Có thể tái chế thành thùng các tông, sách ảnh." },
-  { id: "cardboard", emoji: "📦", nameJa: "段ボール", reading: "だんボール", nameVi: "Thùng các tông", categoryId: "shigen", note: "Buộc gọn bằng dây trước khi vứt." },
-  { id: "milk_carton", emoji: "🥛", nameJa: "牛乳パック（洗って開いたもの）", reading: "ぎゅうにゅうパック（あらってひらいたもの）", nameVi: "Hộp sữa (đã rửa sạch, mở ra)", categoryId: "shigen", note: "Rửa và phơi khô, cắt mở ra -- tái chế thành khăn giấy/giấy vệ sinh." },
-  { id: "pot_pan", emoji: "🍳", nameJa: "鍋・フライパン", reading: "なべ・フライパン", nameVi: "Nồi, chảo cũ", categoryId: "shigen", note: "Đồ dùng chỉ làm từ kim loại được xếp vào rác tài nguyên." },
-  { id: "food_tray", emoji: "🍱", nameJa: "食品トレー（洗ったもの）", reading: "しょくひんトレー（あらったもの）", nameVi: "Khay đựng thịt/cá (đã rửa)", categoryId: "shigen", note: "Nếu không rửa sạch được vết bẩn thì bỏ vào rác cháy được." },
-  { id: "cookie_tin", emoji: "🥫", nameJa: "クッキー缶（金属）", reading: "クッキーかん（きんぞく）", nameVi: "Hộp bánh quy bằng kim loại", categoryId: "shigen", note: "Kim loại -- rác tài nguyên." },
+  // しげんゴミ
+  { id: "can", emoji: "🥫", nameJa: "あきかん", nameVi: "Lon rỗng", categoryId: "shigen", note: "Rửa sạch trước khi vứt. Có thể tái chế thành lon mới, vành xe, vật liệu xây dựng." },
+  { id: "glass_bottle", emoji: "🍾", nameJa: "あきびん", nameVi: "Chai thủy tinh (còn nguyên)", categoryId: "shigen", note: "Chai vỡ thì xếp vào rác không cháy được, chai còn nguyên thì tái chế." },
+  { id: "newspaper", emoji: "📰", nameJa: "しんぶんし", nameVi: "Báo cũ", categoryId: "shigen", note: "Giấy sạch, khô ráo có thể tái chế thành báo/tạp chí mới." },
+  { id: "magazine", emoji: "📖", nameJa: "ざっし", nameVi: "Tạp chí", categoryId: "shigen", note: "Có thể tái chế thành thùng các tông, sách ảnh." },
+  { id: "cardboard", emoji: "📦", nameJa: "だんボール", nameVi: "Thùng các tông", categoryId: "shigen", note: "Buộc gọn bằng dây trước khi vứt." },
+  { id: "milk_carton", emoji: "🥛", nameJa: "ぎゅうにゅうパック（あらってひらいたもの）", nameVi: "Hộp sữa (đã rửa sạch, mở ra)", categoryId: "shigen", note: "Rửa và phơi khô, cắt mở ra -- tái chế thành khăn giấy/giấy vệ sinh." },
+  { id: "pot_pan", emoji: "🍳", nameJa: "なべ・フライパン", nameVi: "Nồi, chảo cũ", categoryId: "shigen", note: "Đồ dùng chỉ làm từ kim loại được xếp vào rác tài nguyên." },
+  { id: "food_tray", emoji: "🍱", nameJa: "しょくひんトレー（あらったもの）", nameVi: "Khay đựng thịt/cá (đã rửa)", categoryId: "shigen", note: "Nếu không rửa sạch được vết bẩn thì bỏ vào rác cháy được." },
+  { id: "cookie_tin", emoji: "🥫", nameJa: "クッキーかん（きんぞく）", nameVi: "Hộp bánh quy bằng kim loại", categoryId: "shigen", note: "Kim loại -- rác tài nguyên." },
 
   // プラスチックゴミ
-  { id: "noodle_cup", emoji: "🍜", nameJa: "カップ麺の容器", reading: "カップめんのようき", nameVi: "Vỏ mì ly", categoryId: "plastic", note: "Rửa sạch trước khi vứt vào rác nhựa." },
-  { id: "styrofoam", emoji: "📦", nameJa: "発泡スチロール", reading: "はっぽうスチロール", nameVi: "Xốp (styrofoam)", categoryId: "plastic", note: "Nhẹ và mỏng -- thường xếp vào rác nhựa." },
-  { id: "plastic_dish", emoji: "🍽️", nameJa: "プラスチック食器", reading: "プラスチックしょっき", nameVi: "Bát đĩa nhựa", categoryId: "plastic", note: "Có dấu \"プラ\" thì xếp vào rác nhựa/tài nguyên." },
-  { id: "shampoo_bottle", emoji: "🧴", nameJa: "シャンプーボトル", reading: "シャンプーボトル", nameVi: "Chai dầu gội (rỗng)", categoryId: "plastic", note: "Rửa sạch trước khi vứt." },
-  { id: "sauce_bottle", emoji: "🍶", nameJa: "ソース・マヨネーズ容器", reading: "ソース・マヨネーズようき", nameVi: "Chai tương/sốt mayonnaise (rỗng)", categoryId: "plastic", note: "Rửa sạch trước khi vứt." },
-  { id: "wash_basin", emoji: "🪣", nameJa: "洗面器（プラ製）", reading: "せんめんき（プラせい）", nameVi: "Chậu rửa mặt bằng nhựa", categoryId: "plastic", note: "Đồ nhựa dày hơn thẻ ngân hàng có thể xếp vào rác không cháy được tùy địa phương." },
+  { id: "noodle_cup", emoji: "🍜", nameJa: "カップめんのようき", nameVi: "Vỏ mì ly", categoryId: "plastic", note: "Rửa sạch trước khi vứt vào rác nhựa." },
+  { id: "styrofoam", emoji: "📦", nameJa: "はっぽうスチロール", nameVi: "Xốp (styrofoam)", categoryId: "plastic", note: "Nhẹ và mỏng -- thường xếp vào rác nhựa." },
+  { id: "plastic_dish", emoji: "🍽️", nameJa: "プラスチックしょっき", nameVi: "Bát đĩa nhựa", categoryId: "plastic", note: "Có dấu \"プラ\" thì xếp vào rác nhựa/tài nguyên." },
+  { id: "shampoo_bottle", emoji: "🧴", nameJa: "シャンプーボトル", nameVi: "Chai dầu gội (rỗng)", categoryId: "plastic", note: "Rửa sạch trước khi vứt." },
+  { id: "sauce_bottle", emoji: "🍶", nameJa: "ソース・マヨネーズようき", nameVi: "Chai tương/sốt mayonnaise (rỗng)", categoryId: "plastic", note: "Rửa sạch trước khi vứt." },
+  { id: "wash_basin", emoji: "🪣", nameJa: "せんめんき（プラせい）", nameVi: "Chậu rửa mặt bằng nhựa", categoryId: "plastic", note: "Đồ nhựa dày hơn thẻ ngân hàng có thể xếp vào rác không cháy được tùy địa phương." },
 
-  // PETボトル
-  { id: "pet_bottle_water", emoji: "🍾", nameJa: "水のペットボトル", reading: "みずのペットボトル", nameVi: "Chai nước PET", categoryId: "pet", note: "Tháo nắp, tháo nhãn, rửa sạch trước khi vứt." },
-  { id: "pet_bottle_tea", emoji: "🧃", nameJa: "お茶のペットボトル", reading: "おちゃのペットボトル", nameVi: "Chai trà PET", categoryId: "pet", note: "Cùng quy tắc: tháo nắp/nhãn, rửa sạch." },
+  // ペットボトル
+  { id: "pet_bottle_water", emoji: "🍾", nameJa: "みずのペットボトル", nameVi: "Chai nước PET", categoryId: "pet", note: "Tháo nắp, tháo nhãn, rửa sạch trước khi vứt." },
+  { id: "pet_bottle_tea", emoji: "🧃", nameJa: "おちゃのペットボトル", nameVi: "Chai trà PET", categoryId: "pet", note: "Cùng quy tắc: tháo nắp/nhãn, rửa sạch." },
 
-  // 粗大ゴミ
-  { id: "table", emoji: "🪑", nameJa: "木製テーブル", reading: "もくせいテーブル", nameVi: "Bàn gỗ", categoryId: "sodai", note: "Đồ nội thất lớn, không vừa túi 20 lít." },
-  { id: "chair", emoji: "🪑", nameJa: "椅子", reading: "いす", nameVi: "Ghế", categoryId: "sodai", note: "Nếu tháo rời được thành mảnh nhỏ có thể vứt vào ngày rác cháy được." },
-  { id: "bed", emoji: "🛏️", nameJa: "ベッド", reading: "ベッド", nameVi: "Giường", categoryId: "sodai", note: "Đồ nội thất lớn -- rác cồng kềnh." },
-  { id: "mattress", emoji: "🛏️", nameJa: "マットレス", reading: "マットレス", nameVi: "Nệm", categoryId: "sodai", note: "Đồ dùng giường chiếu cỡ lớn." },
-  { id: "futon", emoji: "🛌", nameJa: "掛布団", reading: "かけぶとん", nameVi: "Chăn/đệm bông", categoryId: "sodai", note: "Đồ dùng giường chiếu -- rác cồng kềnh." },
-  { id: "wardrobe", emoji: "🗄️", nameJa: "タンス", reading: "タンス", nameVi: "Tủ quần áo", categoryId: "sodai", note: "Đồ nội thất lớn -- rác cồng kềnh." },
-  { id: "carpet", emoji: "🧶", nameJa: "カーペット", reading: "カーペット", nameVi: "Thảm trải sàn (cỡ lớn)", categoryId: "sodai", note: "Thảm cao cấp cỡ lớn được nêu trong bài học là rác cồng kềnh." },
-  { id: "tatami", emoji: "🟫", nameJa: "畳", reading: "たたみ", nameVi: "Chiếu tatami", categoryId: "sodai", note: "Kích thước lớn -- rác cồng kềnh." },
-  { id: "desk", emoji: "🗄️", nameJa: "事務用デスク", reading: "じむようデスク", nameVi: "Bàn làm việc", categoryId: "sodai", note: "Đồ nội thất lớn -- rác cồng kềnh." },
+  // そだいゴミ
+  { id: "table", emoji: "🪑", nameJa: "もくせいテーブル", nameVi: "Bàn gỗ", categoryId: "sodai", note: "Đồ nội thất lớn, không vừa túi 20 lít." },
+  { id: "chair", emoji: "🪑", nameJa: "いす", nameVi: "Ghế", categoryId: "sodai", note: "Nếu tháo rời được thành mảnh nhỏ có thể vứt vào ngày rác cháy được." },
+  { id: "bed", emoji: "🛏️", nameJa: "ベッド", nameVi: "Giường", categoryId: "sodai", note: "Đồ nội thất lớn -- rác cồng kềnh." },
+  { id: "mattress", emoji: "🛏️", nameJa: "マットレス", nameVi: "Nệm", categoryId: "sodai", note: "Đồ dùng giường chiếu cỡ lớn." },
+  { id: "futon", emoji: "🛌", nameJa: "かけぶとん", nameVi: "Chăn/đệm bông", categoryId: "sodai", note: "Đồ dùng giường chiếu -- rác cồng kềnh." },
+  { id: "wardrobe", emoji: "🗄️", nameJa: "タンス", nameVi: "Tủ quần áo", categoryId: "sodai", note: "Đồ nội thất lớn -- rác cồng kềnh." },
+  { id: "carpet", emoji: "🧶", nameJa: "カーペット", nameVi: "Thảm trải sàn (cỡ lớn)", categoryId: "sodai", note: "Thảm cao cấp cỡ lớn được nêu trong bài học là rác cồng kềnh." },
+  { id: "tatami", emoji: "🟫", nameJa: "たたみ", nameVi: "Chiếu tatami", categoryId: "sodai", note: "Kích thước lớn -- rác cồng kềnh." },
+  { id: "desk", emoji: "🗄️", nameJa: "じむようデスク", nameVi: "Bàn làm việc", categoryId: "sodai", note: "Đồ nội thất lớn -- rác cồng kềnh." },
 
-  // 大型家電
-  { id: "fridge", emoji: "🧊", nameJa: "冷蔵庫", reading: "れいぞうこ", nameVi: "Tủ lạnh", categoryId: "kaden", note: "Thuộc luật tái chế đồ điện gia dụng -- không vứt như rác cồng kềnh." },
-  { id: "washer", emoji: "🌀", nameJa: "洗濯機", reading: "せんたくき", nameVi: "Máy giặt", categoryId: "kaden", note: "Phải liên hệ cửa hàng hoặc đơn vị thu gom chỉ định (có phí)." },
-  { id: "aircon", emoji: "❄️", nameJa: "エアコン", reading: "エアコン", nameVi: "Máy điều hòa", categoryId: "kaden", note: "Không thể vứt vào ngày rác thường dù đã tháo rời." },
-  { id: "tv", emoji: "📺", nameJa: "液晶テレビ", reading: "えきしょうテレビ", nameVi: "Tivi", categoryId: "kaden", note: "Thuộc 4 mặt hàng chính của luật tái chế gia dụng lớn." },
+  // おおがたかでん
+  { id: "fridge", emoji: "🧊", nameJa: "れいぞうこ", nameVi: "Tủ lạnh", categoryId: "kaden", note: "Thuộc luật tái chế đồ điện gia dụng -- không vứt như rác cồng kềnh." },
+  { id: "washer", emoji: "🌀", nameJa: "せんたくき", nameVi: "Máy giặt", categoryId: "kaden", note: "Phải liên hệ cửa hàng hoặc đơn vị thu gom chỉ định (có phí)." },
+  { id: "aircon", emoji: "❄️", nameJa: "エアコン", nameVi: "Máy điều hòa", categoryId: "kaden", note: "Không thể vứt vào ngày rác thường dù đã tháo rời." },
+  { id: "tv", emoji: "📺", nameJa: "えきしょうテレビ", nameVi: "Tivi", categoryId: "kaden", note: "Thuộc 4 mặt hàng chính của luật tái chế gia dụng lớn." },
 
-  // 危険・有害ゴミ
-  { id: "battery", emoji: "🔋", nameJa: "乾電池", reading: "かんでんち", nameVi: "Pin khô", categoryId: "kiken", note: "Thu gom riêng theo lịch của địa phương." },
-  { id: "spray_can", emoji: "🧴", nameJa: "スプレー缶", reading: "スプレーかん", nameVi: "Bình xịt", categoryId: "kiken", note: "Phải xì hết ga (đâm thủng, làm xẹp) trước khi vứt vì có nguy cơ phát nổ." },
-  { id: "fluorescent", emoji: "💡", nameJa: "蛍光灯", reading: "けいこうとう", nameVi: "Đèn huỳnh quang", categoryId: "kiken", note: "Chứa hóa chất -- thu gom riêng, không cùng rác không cháy thường." },
-  { id: "lighter", emoji: "🔥", nameJa: "ライター", reading: "ライター", nameVi: "Bật lửa", categoryId: "kiken", note: "Có nguy cơ cháy nổ -- xếp vào rác nguy hiểm." },
-  { id: "thermometer", emoji: "🌡️", nameJa: "体温計", reading: "たいおんけい", nameVi: "Nhiệt kế đã qua sử dụng", categoryId: "kiken", note: "Thu gom riêng theo lịch của địa phương." },
+  // きけん・ゆうがいゴミ
+  { id: "battery", emoji: "🔋", nameJa: "かんでんち", nameVi: "Pin khô", categoryId: "kiken", note: "Thu gom riêng theo lịch của địa phương." },
+  { id: "spray_can", emoji: "🧴", nameJa: "スプレーかん", nameVi: "Bình xịt", categoryId: "kiken", note: "Phải xì hết ga (đâm thủng, làm xẹp) trước khi vứt vì có nguy cơ phát nổ." },
+  { id: "fluorescent", emoji: "💡", nameJa: "けいこうとう", nameVi: "Đèn huỳnh quang", categoryId: "kiken", note: "Chứa hóa chất -- thu gom riêng, không cùng rác không cháy thường." },
+  { id: "lighter", emoji: "🔥", nameJa: "ライター", nameVi: "Bật lửa", categoryId: "kiken", note: "Có nguy cơ cháy nổ -- xếp vào rác nguy hiểm." },
+  { id: "thermometer", emoji: "🌡️", nameJa: "たいおんけい", nameVi: "Nhiệt kế đã qua sử dụng", categoryId: "kiken", note: "Thu gom riêng theo lịch của địa phương." },
 
-  // 特別回収
-  { id: "computer", emoji: "🖥️", nameJa: "パソコン", reading: "パソコン", nameVi: "Máy tính để bàn", categoryId: "special", note: "Chứa nhiều thông tin cá nhân -- liên hệ nhà sản xuất để thu lại." },
-  { id: "laptop", emoji: "💻", nameJa: "ノートパソコン", reading: "ノートパソコン", nameVi: "Laptop", categoryId: "special", note: "Không được vứt như rác thường; nhà sản xuất sẽ xóa dữ liệu khi thu hồi." },
-  { id: "mobile", emoji: "📱", nameJa: "携帯電話", reading: "けいたいでんわ", nameVi: "Điện thoại di động cũ", categoryId: "special", note: "Được thu gom tại tòa thị chính hoặc cửa hàng điện thoại." },
+  // とくべつかいしゅう
+  { id: "computer", emoji: "🖥️", nameJa: "パソコン", nameVi: "Máy tính để bàn", categoryId: "special", note: "Chứa nhiều thông tin cá nhân -- liên hệ nhà sản xuất để thu lại." },
+  { id: "laptop", emoji: "💻", nameJa: "ノートパソコン", nameVi: "Laptop", categoryId: "special", note: "Không được vứt như rác thường; nhà sản xuất sẽ xóa dữ liệu khi thu hồi." },
+  { id: "mobile", emoji: "📱", nameJa: "けいたいでんわ", nameVi: "Điện thoại di động cũ", categoryId: "special", note: "Được thu gom tại tòa thị chính hoặc cửa hàng điện thoại." },
 ];
 
 export const TRUE_FALSE_QUESTIONS: TrueFalseQuestion[] = [
@@ -269,7 +260,7 @@ export const TRUE_FALSE_QUESTIONS: TrueFalseQuestion[] = [
       "Dao, kéo là rác không cháy được nên bạn cho chung vào túi với rác không cháy được khác rồi vứt.",
     correct: false,
     explanationVi:
-      "Phải để dao, kéo vào túi riêng, ghi rõ \"nguy hiểm\" (危険) bên ngoài rồi mới vứt -- không để chung với rác không cháy khác.",
+      "Phải để dao, kéo vào túi riêng, ghi rõ \"nguy hiểm\" (kiken) bên ngoài rồi mới vứt -- không để chung với rác không cháy khác.",
   },
   {
     id: "tf12",
