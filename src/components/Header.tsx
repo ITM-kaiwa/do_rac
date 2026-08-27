@@ -1,6 +1,7 @@
 "use client";
 
 import type { AppMode } from "@/lib/types";
+import Ruby from "./Ruby";
 
 interface HeaderProps {
   mode: AppMode;
@@ -19,9 +20,12 @@ export default function Header({ mode, onModeChange }: HeaderProps) {
     <header className="flex flex-col gap-3 px-4 pt-6 sm:px-8">
       <div className="flex flex-wrap items-center gap-2">
         <span className="text-2xl">♻️</span>
-        <span className="text-sm font-semibold tracking-wide text-sand-700">
-          ゴミの分別 — Phân loại rác
-        </span>
+        <div className="flex flex-col leading-tight">
+          <span className="text-base font-bold tracking-wide text-sand-800">Phân loại rác</span>
+          <span className="text-xs leading-loose text-sand-500">
+            <Ruby text="ゴミの分別" reading="ごみのぶんべつ" />
+          </span>
+        </div>
       </div>
 
       <div className="flex flex-wrap rounded-full bg-sand-200 p-1 shadow-inner">

@@ -11,7 +11,7 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "ゴミの分別 — Phân loại rác",
+  title: "Phân loại rác — ゴミの分別",
   description:
     "Ứng dụng học phân loại rác ở Nhật Bản dành cho thực tập sinh kỹ năng người Việt Nam.",
 };

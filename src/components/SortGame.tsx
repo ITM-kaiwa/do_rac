@@ -5,6 +5,7 @@ import { GOMI_ITEMS, GOMI_CATEGORIES, getGomiCategory } from "@/lib/gomiData";
 import { CATEGORY_STYLES } from "@/lib/categoryStyles";
 import { shuffle } from "@/lib/shuffle";
 import type { GomiItem } from "@/lib/types";
+import Ruby from "./Ruby";
 
 const ROUNDS = 12;
 
@@ -91,8 +92,10 @@ export default function SortGame() {
         </p>
         <div className="mb-5 flex flex-col items-center gap-1 py-4">
           <span className="text-6xl">{current.emoji}</span>
-          <p className="text-xl font-bold text-sand-800">{current.nameJa}</p>
-          <p className="text-sm text-sand-600">{current.nameVi}</p>
+          <p className="text-xl font-bold text-sand-800">{current.nameVi}</p>
+          <p className="text-sm leading-loose text-sand-600">
+            <Ruby text={current.nameJa} reading={current.reading} />
+          </p>
         </div>
 
         <div className="grid grid-cols-3 gap-2 sm:grid-cols-3">
@@ -115,8 +118,8 @@ export default function SortGame() {
                 className={`btn-press flex flex-col items-center justify-center gap-0.5 rounded-xl border p-2 text-center shadow disabled:cursor-default ${style.bg} ${style.border} ${extra}`}
               >
                 <span className="text-xl">{cat.emoji}</span>
-                <span className={`text-[11px] font-semibold leading-tight ${style.text}`}>
-                  {cat.nameJa}
+                <span className={`text-[11px] font-semibold leading-loose ${style.text}`}>
+                  <Ruby text={cat.nameJa} reading={cat.nameReading} />
                 </span>
               </button>
             );
@@ -129,10 +132,16 @@ export default function SortGame() {
               isCorrect ? "border-green-400 bg-green-50 text-green-800" : "border-red-300 bg-red-50 text-red-700"
             }`}
           >
-            <p className="font-semibold">
-              {isCorrect
-                ? "Chính xác!"
-                : `Chưa đúng — đáp án là "${correctCategory?.nameJa} / ${correctCategory?.nameVi}".`}
+            <p className="font-semibold leading-loose">
+              {isCorrect ? (
+                "Chính xác!"
+              ) : (
+                <>
+                  Chưa đúng — đáp án là &quot;{correctCategory?.nameVi} (
+                  <Ruby text={correctCategory?.nameJa ?? ""} reading={correctCategory?.nameReading} />
+                  )&quot;.
+                </>
+              )}
             </p>
             <p className="mt-1 text-sand-700">{current.note}</p>
             <button

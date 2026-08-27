@@ -33,6 +33,8 @@ export interface GomiItem {
   id: string;
   emoji: string;
   nameJa: string;
+  /** Hiragana reading of nameJa, for furigana. Equal to nameJa when the term is already pure kana/katakana. */
+  reading: string;
   nameVi: string;
   categoryId: GomiCategoryId;
   /** Short explanation shown after answering (why this category / caveats). */
