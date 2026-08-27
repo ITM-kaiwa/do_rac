@@ -7,7 +7,7 @@ import { shuffle } from "@/lib/shuffle";
 import type { GomiCategoryId, GomiItem } from "@/lib/types";
 
 const TOTAL_ROUNDS = 8;
-const FALL_DURATION_MS = 6500;
+const FALL_DURATION_MS = 11000;
 
 interface RoundData {
   item: GomiItem;
