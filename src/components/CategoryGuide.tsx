@@ -33,7 +33,7 @@ export default function CategoryGuide() {
               key={cat.id}
               type="button"
               onClick={() => toggle(cat.id)}
-              className="flip-perspective btn-press h-56 text-left"
+              className="flip-perspective btn-press h-44 text-left"
               aria-label={`${cat.nameJa} — ${cat.nameVi}`}
             >
               <div className={`flip-inner ${isFlipped ? "is-flipped" : ""}`}>
@@ -44,7 +44,7 @@ export default function CategoryGuide() {
                   <span className="text-4xl">{cat.emoji}</span>
                   <p className={`text-lg font-bold ${style.text}`}>{cat.nameJa}</p>
                   <p className="mt-1 text-sm font-medium text-sand-700">{cat.nameVi}</p>
-                  <p className="mt-auto text-[11px] text-sand-500">(Bấm để xem chi tiết)</p>
+                  <p className="mt-2 text-[11px] text-sand-500">(Bấm để xem chi tiết)</p>
                 </div>
 
                 {/* Back */}
