@@ -8,7 +8,6 @@ import type { GomiCategoryId, GomiItem } from "@/lib/types";
 
 const TOTAL_ROUNDS = 8;
 const FALL_DURATION_MS = 6500;
-const MAX_CANDIDATES = 6;
 
 interface RoundData {
   item: GomiItem;
@@ -22,9 +21,8 @@ interface ResultInfo {
 
 function buildRound(pool: GomiItem[]): RoundData {
   const item = pool[Math.floor(Math.random() * pool.length)];
-  const decoyPool = GOMI_CATEGORIES.map((c) => c.id).filter((id) => id !== item.categoryId);
-  const decoys = shuffle(decoyPool).slice(0, MAX_CANDIDATES - 1);
-  const candidates = shuffle([item.categoryId, ...decoys]);
+  // Always show every category so learners have to know the full set, not just a subset.
+  const candidates = shuffle(GOMI_CATEGORIES.map((c) => c.id));
   return { item, candidates };
 }
 
@@ -176,7 +174,7 @@ export default function FallingGame() {
           >
             <span className="text-3xl">{item.emoji}</span>
             <span className="text-[11px] font-bold leading-tight text-sand-800">{item.nameVi}</span>
-            <span className="text-[10px] leading-tight text-sand-500">{item.nameJa}</span>
+            <span className="text-[10px] leading-tight text-sand-500">{item.reading}</span>
           </div>
           {/* Catch line marker */}
           <div className="absolute bottom-6 left-2 right-2 border-t-2 border-dashed border-leaf-400/70" />
@@ -202,7 +200,7 @@ export default function FallingGame() {
                 >
                   <span className="text-xl">{cat.emoji}</span>
                   <span className={`text-[10px] font-semibold leading-tight ${style.text}`}>
-                    {cat.nameJa}
+                    {cat.nameReading}
                   </span>
                 </button>
               );
@@ -222,7 +220,7 @@ export default function FallingGame() {
               {!result.timedOut && !result.success && <p className="font-semibold">Chưa đúng.</p>}
               {!result.success && (
                 <p className="mt-1">
-                  Đáp án đúng: &quot;{correctCategory?.nameVi} ({correctCategory?.nameJa})&quot;.
+                  Đáp án đúng: &quot;{correctCategory?.nameVi} ({correctCategory?.nameReading})&quot;.
                 </p>
               )}
               <p className="mt-1 text-sand-700">{item.note}</p>

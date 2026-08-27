@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { GOMI_CATEGORIES } from "@/lib/gomiData";
 import { CATEGORY_STYLES } from "@/lib/categoryStyles";
+import Ruby from "./Ruby";
 
 export default function CategoryGuide() {
   const [flipped, setFlipped] = useState<Set<string>>(new Set());
@@ -33,7 +34,7 @@ export default function CategoryGuide() {
               key={cat.id}
               type="button"
               onClick={() => toggle(cat.id)}
-              className="flip-perspective btn-press h-44 text-left"
+              className="flip-perspective btn-press h-48 text-left"
               aria-label={`${cat.nameJa} — ${cat.nameVi}`}
             >
               <div className={`flip-inner ${isFlipped ? "is-flipped" : ""}`}>
@@ -42,7 +43,9 @@ export default function CategoryGuide() {
                   className={`flip-face flex flex-col items-center justify-center gap-2 rounded-2xl border-2 p-5 text-center shadow-card ${style.bg} ${style.border}`}
                 >
                   <span className="text-4xl">{cat.emoji}</span>
-                  <p className={`text-lg font-bold ${style.text}`}>{cat.nameJa}</p>
+                  <p className={`text-lg font-bold ${style.text}`}>
+                    <Ruby text={cat.nameJa} reading={cat.nameReading} />
+                  </p>
                   <p className="mt-1 text-sm font-medium text-sand-700">{cat.nameVi}</p>
                   <p className="mt-2 text-[11px] text-sand-500">(Bấm để xem chi tiết)</p>
                 </div>
@@ -52,7 +55,7 @@ export default function CategoryGuide() {
                   className={`flip-face flip-face-back flex flex-col justify-start gap-2 overflow-y-auto rounded-2xl border-2 p-4 shadow-card ${style.bgStrong} ${style.border}`}
                 >
                   <p className={`text-sm font-bold ${style.text}`}>
-                    {cat.emoji} {cat.nameJa}
+                    {cat.emoji} <Ruby text={cat.nameJa} reading={cat.nameReading} />
                   </p>
                   <p className="text-xs font-medium text-sand-600">{cat.nameVi}</p>
                   <p className="text-xs leading-relaxed text-sand-700">{cat.descriptionVi}</p>

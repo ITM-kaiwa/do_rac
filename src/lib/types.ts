@@ -21,8 +21,10 @@ export type GomiCategoryId =
 export interface GomiCategory {
   id: GomiCategoryId;
   emoji: string;
-  /** Hiragana/katakana only -- no kanji, so this reads cleanly at small sizes without furigana. */
+  /** Kanji form, shown with furigana on content pages (e.g. the category guide). */
   nameJa: string;
+  /** Hiragana/katakana reading of nameJa -- used alone (no kanji, no ruby) inside game cards, where ruby text is too small to read. */
+  nameReading: string;
   nameVi: string;
   descriptionVi: string;
   /** Tailwind color stem, e.g. "red" -> bg-red-100, border-red-300, text-red-700. */
@@ -32,8 +34,10 @@ export interface GomiCategory {
 export interface GomiItem {
   id: string;
   emoji: string;
-  /** Hiragana/katakana only -- no kanji, so this reads cleanly at small sizes without furigana. */
+  /** Kanji form, shown with furigana on content pages. */
   nameJa: string;
+  /** Hiragana/katakana reading of nameJa -- used alone inside game cards. Equal to nameJa when the term is already pure kana/katakana. */
+  reading: string;
   nameVi: string;
   categoryId: GomiCategoryId;
   /** Short explanation shown after answering (why this category / caveats). */

@@ -92,7 +92,7 @@ export default function SortGame() {
         <div className="mb-5 flex flex-col items-center gap-1 py-4">
           <span className="text-6xl">{current.emoji}</span>
           <p className="text-xl font-bold text-sand-800">{current.nameVi}</p>
-          <p className="text-sm text-sand-600">{current.nameJa}</p>
+          <p className="text-sm text-sand-600">{current.reading}</p>
         </div>
 
         <div className="grid grid-cols-3 gap-2 sm:grid-cols-3">
@@ -116,7 +116,7 @@ export default function SortGame() {
               >
                 <span className="text-xl">{cat.emoji}</span>
                 <span className={`text-[11px] font-semibold leading-tight ${style.text}`}>
-                  {cat.nameJa}
+                  {cat.nameReading}
                 </span>
               </button>
             );
@@ -132,7 +132,7 @@ export default function SortGame() {
             <p className="font-semibold">
               {isCorrect
                 ? "Chính xác!"
-                : `Chưa đúng — đáp án là "${correctCategory?.nameVi} (${correctCategory?.nameJa})".`}
+                : `Chưa đúng — đáp án là "${correctCategory?.nameVi} (${correctCategory?.nameReading})".`}
             </p>
             <p className="mt-1 text-sand-700">{current.note}</p>
             <button
